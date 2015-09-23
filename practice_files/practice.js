@@ -33,3 +33,25 @@
 // sentenceSwitcher(specialSentence, " ");
 
 //Calculate a remainder (given a numerator and denominator)
+
+// function calcRemainder (numerator, denominator){
+//   var remainder = numerator % denominator;
+//   console.log(remainder);
+// }
+//
+// calcRemainder(26,3);
+
+//Return distinct values from a list including duplicates (i.e. "1 3 5 3 7 3 1 1 5" -> "1 3 5 7")
+list = [1, 3, 5, 3, 7, 3, 1, 1, 5];
+function distinctValues(newList) {
+  var i;
+  var uniqueValues = [];
+  for (i = 0; i < newList.length; i++) {
+    if(newList[i] !== newList[i]){
+      uniqueValues.push(newList[i]);
+    }
+  }
+  console.log(uniqueValues);
+}
+
+distinctValues(list);
