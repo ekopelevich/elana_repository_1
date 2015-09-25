@@ -44,17 +44,17 @@
 //Return distinct values from a list including duplicates
 //The expected result is [1, 3, 5, 7]
 
-var newList = [1, 3, 5, 3, 7, 3, 1, 1, 5];
-var uniqueValues = [];
-
-function distinctValues(list) {
-  for (i=0; i < list.length; i++){
-    if (list.indexOf(list[i]) === i){
-      uniqueValues.push(list[i]);
-    }
-  }
-  console.log(newList);
-  console.log(uniqueValues);
-}
-
-distinctValues(newList);
+// var newList = [1, 3, 5, 3, 7, 3, 1, 1, 5];
+// var uniqueValues = [];
+//
+// function distinctValues(list) {
+//   for (i=0; i < list.length; i++){
+//     if (list.indexOf(list[i]) === i){
+//       uniqueValues.push(list[i]);
+//     }
+//   }
+//   console.log(newList);
+//   console.log(uniqueValues);
+// }
+//
+// distinctValues(newList);
