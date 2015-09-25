@@ -41,17 +41,20 @@
 //
 // calcRemainder(26,3);
 
-//Return distinct values from a list including duplicates (i.e. "1 3 5 3 7 3 1 1 5" -> "1 3 5 7")
-list = [1, 3, 5, 3, 7, 3, 1, 1, 5];
-function distinctValues(newList) {
-  var i;
-  var uniqueValues = [];
-  for (i = 0; i < newList.length; i++) {
-    if(newList[i] !== newList[i]){
-      uniqueValues.push(newList[i]);
+//Return distinct values from a list including duplicates
+//The expected result is [1, 3, 5, 7]
+
+var newList = [1, 3, 5, 3, 7, 3, 1, 1, 5];
+var uniqueValues = [];
+
+function distinctValues(list) {
+  for (i=0; i < list.length; i++){
+    if (list.indexOf(list[i]) === i){
+      uniqueValues.push(list[i]);
     }
   }
+  console.log(newList);
   console.log(uniqueValues);
 }
 
-distinctValues(list);
+distinctValues(newList);
