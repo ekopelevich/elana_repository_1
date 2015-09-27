@@ -45,6 +45,7 @@
 //The expected result is [1, 3, 5, 7]
 
 // var newList = [1, 3, 5, 3, 7, 3, 1, 1, 5];
+// var i;
 // var uniqueValues = [];
 //
 // function distinctValues(list) {
@@ -58,3 +59,37 @@
 // }
 //
 // distinctValues(newList);
+
+//Return distinct values and their counts
+//(i.e. the list above becomes "1(3) 3(3) 5(2) 7(1)")
+
+// var newList = [1, 3, 5, 3, 7, 3, 1, 1, 5];
+//
+// function uniqueValsAndCounts(list) {
+//
+//   var finalArr = []; //Put final results in this array
+//   var counts = {}; //Store counts for each value
+//   var count = 0;   //Initialialze count
+//   var i, semiFinalStr, finalStr;
+//
+//   for (i = 0; i < list.length; i++){
+//     count = counts[list[i]] || 0; //Use existing count or start at 0;
+//     count++; // Increment count
+//     counts[list[i]] = count; //Update counts object with latest count
+//   }
+//
+//   for (var key in counts) {
+//     finalArr.push(parseInt(key, 10));
+//     finalArr.push('(' + counts[key] + ')');
+//   }
+//
+//   semiFinalStr = finalArr.toString();
+//   finalStr = semiFinalStr.replace(/,/g, " ");
+//
+//   console.log(newList);
+//   console.log(counts);
+//   console.log(finalArr);
+//   console.log(finalStr);
+// }
+//
+// uniqueValsAndCounts(newList);
