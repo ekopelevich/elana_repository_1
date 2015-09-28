@@ -93,3 +93,27 @@
 // }
 //
 // uniqueValsAndCounts(newList);
+
+
+// Given a string of expressions and a set of variable/value pairs,
+// Return the result of the expression.
+// Expected result for expression below is 1.
+
+// var str = "a + b + c - d";
+// var keyObj = {a: 1, b: 2, c: 3, d: 4};
+// var expression, solution;
+// 
+// function algebra (newStr) {
+//   //solution = newStr.replace(/ /g, "");
+//   for (i = 0; i < newStr.length; i++) {
+//     expression = newStr.replace('a', keyObj.a);
+//     expression = expression.replace('b', keyObj.b);
+//     expression = expression.replace('c', keyObj.c);
+//     expression = expression.replace('d', keyObj.d);
+//   }
+//   solution = eval(expression);
+//   console.log(expression);
+//   console.log(solution);
+// }
+//
+// algebra (str);
