@@ -102,7 +102,7 @@
 // var str = "a + b + c - d";
 // var keyObj = {a: 1, b: 2, c: 3, d: 4};
 // var expression, solution;
-// 
+//
 // function algebra (newStr) {
 //   //solution = newStr.replace(/ /g, "");
 //   for (i = 0; i < newStr.length; i++) {
@@ -117,3 +117,9 @@
 // }
 //
 // algebra (str);
+
+//Try some jQuery
+
+$(document).ready(function () {
+    $('.container').append('<p>This text was added with jQuery!</p>');
+});
