@@ -119,7 +119,30 @@
 // algebra (str);
 
 //Try some jQuery
+//
+// $(document).ready(function () {
+//     $('.container').append('<p>This text was added with jQuery!</p>');
+// });
 
-$(document).ready(function () {
-    $('.container').append('<p>This text was added with jQuery!</p>');
-});
+//Rewrite a fizzbuzz from scratch again
+
+function fizzbuzz () {
+  var i = 0;
+  for (i = 0; i < 101; i++){
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+      console.log("fizzbuzz");
+    }
+    else if (i % 3 === 0) {
+      console.log("fizz");
+    }
+    else if(i % 5 === 0) {
+      console.log("buzz");
+    }
+    else {
+      console.log(i);
+    }
+
+  }
+}
+
+fizzbuzz();
